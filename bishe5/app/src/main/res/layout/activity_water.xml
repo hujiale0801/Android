@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btn_now"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:text="浇水"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:text="停止"
+        android:textSize="25dp"
+        android:layout_marginTop="130dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/set_time"
+        android:text="设置浇水时间"
+        android:textSize="25dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="130dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/start_hour"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_marginStart="10dp"
+        android:maxLength="2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:importantForAutofill="no" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hour"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/start_min"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:maxLength="2"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:autofillHints="" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="至"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/end_hour"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:maxLength="2"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:autofillHints="" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/end_min"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:maxLength="2"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:autofillHints="" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分"
+        android:textSize="25sp"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textStyle="normal|bold" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_slot"
+        android:text="确定"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_height="50dp"/>
+
+
+
+    <TextView
+        android:text="浇水时间间隔：(分钟)"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/time_interval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <TextView
+        android:text="每次浇水时长(分钟)"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_marginLeft="140dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/time_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <TextView
+        android:text="浇水次数"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_marginLeft="140dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/time_frequency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="normal|bold"
+            android:autofillHints="" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:text="确定"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
